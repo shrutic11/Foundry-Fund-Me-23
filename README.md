@@ -75,6 +75,10 @@ To use the smart contract, follow these steps:
 
 - Various `make` commands are provided for easy deployment and testing using different networks.
 
+## Interactions.s.sol (Integration Testing) explanation:
+
+[![Interactions Script Explained](https://img.youtube.com/vi/4cuT8NTRwWE/0.jpg)](https://www.youtube.com/watch?v=4cuT8NTRwWE)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
