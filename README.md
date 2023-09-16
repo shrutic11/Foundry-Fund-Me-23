@@ -54,8 +54,6 @@ To use the smart contract, follow these steps:
 
 ## Solidity Libraries
 
-- **Chainlink AggregatorV3Interface**: This interface is used for fetching ETH to USD price feeds provided by Chainlink.
-
 - **PriceConverter**: A custom library used to convert ETH to USD based on the ETH to USD price feed obtained from Chainlink.
 
 - **console** from `forge-std/Script.sol`: This is a library used for console logging.
@@ -66,11 +64,12 @@ To use the smart contract, follow these steps:
 
 ## Helper Scripts
 
-- **DeployFundMe.s.sol**: A script to deploy the FundMe contract and set the ETH to USD price feed address.
+- **HelperConfig.s.sol**: A script to fetch the active network configuration.
 
 ## Deployment Scripts
 
-- **HelperConfig.s.sol**: A script to fetch the active network configuration.
+
+- **DeployFundMe.s.sol**: A script to deploy the FundMe contract and set the ETH to USD price feed address.
 
 ## Makefile Commands
 
