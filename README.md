@@ -77,7 +77,7 @@ To use the smart contract, follow these steps:
 
 ## Interactions.s.sol (Integration Testing) explanation:
 
-[![Interactions Script Explained](https://img.youtube.com/vi/4cuT8NTRwWE/0.jpg)](https://www.youtube.com/watch?v=4cuT8NTRwWE)
+[![Interactions Script Explained](https://img.youtube.com/vi/fhl7wIxjRbk/0.jpg)](https://www.youtube.com/watch?v=fhl7wIxjRbk)
 
 ## License
 
