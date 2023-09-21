@@ -25,6 +25,7 @@ contract InteractionsFundMeTest is Test {
 
         //Funding the FundMe using Interactions
         FundFundMe fundFundMe = new FundFundMe();
+
         fundFundMe.fundFundMe(address(fundMe), SEND_ETH);
         uint256 ownerInitialBalance = msg.sender.balance;
 

@@ -5,7 +5,7 @@ deploy-anvil:; forge script script/DeployFundMe.s.sol --rpc-url http://127.0.0.1
 
 deploy-sepolia:; forge script script/DeployFundMe.s.sol --rpc-url $(SEPOLIA_RPC_URL) --private-key $(SEPOLIA_PRIVATE_KEY) --broadcast -v
 
-fundFundMe-anvil:; forge script script/Interactions.s.sol:FundFundMe  --rpc-url http://127.0.0.1:8545 --private-key 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d  --broadcast -v
+fundFundMe-anvil:; forge script script/Interactions.s.sol:FundFundMe  --rpc-url http://127.0.0.1:8545 --private-key 0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d  --broadcast -vvvvv
 
 fundFundMe-sepolia:;forge script script/Interactions.s.sol:FundFundMe  --rpc-url $(SEPOLIA_RPC_URL)  --private-key $(SEPOLIA_PRIVATE_KEY)  --broadcast
 

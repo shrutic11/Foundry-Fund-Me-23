@@ -2,18 +2,19 @@
 
 import {FundMe} from "../src/FundMe.sol";
 import {Script, console} from "forge-std/Script.sol";
-import {DevOpsTools} from "foundry-devops/src/devOpsTools.sol";
+import {DevOpsTools} from "lib/foundry-devops/src/DevOpsTools.sol";
 
 pragma solidity ^0.8.19;
 
 contract FundFundMe is Script {
-    uint256 public s_amountSent;
+    uint256 public s_amountSent = 0.01 ether;
 
     function run() external {
         address mostRecentFundMe = DevOpsTools.get_most_recent_deployment(
             "FundMe",
             block.chainid
         );
+
         fundFundMe(mostRecentFundMe, s_amountSent);
     }
 
@@ -33,6 +34,7 @@ contract WithdrawFundMe is Script {
             "FundMe",
             block.chainid
         );
+
         withdrawFundMe(mostRecentFundMe);
     }
 
